@@ -6,7 +6,7 @@
 /*   By: silim <silim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 18:00:57 by silim             #+#    #+#             */
-/*   Updated: 2021/08/23 19:40:27 by silim            ###   ########.fr       */
+/*   Updated: 2021/08/30 15:41:20 by silim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ static int	is_valid_pid(const char *pid, int pid_n)
 
 	i = -1;
 	if (!pid)
-		return (INVALID_PID);
+		return (INVALID);
 	if (pid_n < 100 || 99998 < pid_n)
-		return (INVALID_PID);
+		return (INVALID);
 	while (pid[++i])
 		if (pid[i] < '0' || pid[i] > '9')
-			return (INVALID_PID);
-	return (VALID_PID);
+			return (INVALID);
+	return (VALID);
 }
 
 static void	send_message(int pid, const char *message, int msg_len)

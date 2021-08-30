@@ -6,18 +6,19 @@
 /*   By: silim <silim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 18:01:13 by silim             #+#    #+#             */
-/*   Updated: 2021/08/21 17:10:03 by silim            ###   ########.fr       */
+/*   Updated: 2021/08/30 15:42:19 by silim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINITALK_H
 # define MINITALK_H
+
 # include <stdlib.h>
 # include <unistd.h>
 # include <signal.h>
 
-# define INVALID_PID 0
-# define VALID_PID   1
+# define INVALID 0
+# define VALID 1
 # define GREEN "\e[1;92m"
 # define RED "\e[1;91m"
 # define YELLOW "\e[1;93m"
